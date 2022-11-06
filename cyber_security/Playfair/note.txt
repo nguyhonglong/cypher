@@ -1,0 +1,27 @@
+key:monarchy
+plaintext:instruments
+
+the playfair cipher encrypt algorithm:
+ step 1:
+-create a key square with 25 alphabets
+-the alphabets must be unique
+-usally not using the J
+-if the plaintext contains j ,it is replace with i
+
+step 2: 
+	+split the plaintext into pair of two letters
+
+		example :
+			PlainText: "instruments" 
+			After Split: 'in' 'st' 'ru' 'me' 'nt' 'sz'
+			-if there is a odd letter,a "z" is add to last letter
+
+			hello
+			"he","lx","lo"
+
+		-if there is a double letter ,a bogus letter will be added to the right of the previous letter
+
+	+encrypt:
+	if both the two letters are in the same collumn ,take the letter below each one(going back to top  if at the bottom)
+	If both the letters are in the same row: Take the letter to the right of each one (going back to the leftmost if at the rightmost position).
+	If neither of the above rules is true: Form a rectangle with the two letters and take the letters on the horizontal opposite corner of the rectangle.

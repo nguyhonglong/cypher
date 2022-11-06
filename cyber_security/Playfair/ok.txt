@@ -1,0 +1,2 @@
+1 trong html không dùng js thay vào đó để chung vào 1 file js
+2 không sử dụng if else cho filter,sử dụng class
